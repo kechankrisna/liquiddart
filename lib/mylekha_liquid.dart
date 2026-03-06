@@ -5,7 +5,7 @@
 /// ## Quick start
 ///
 /// ```dart
-/// import 'package:liquiddart/liquiddart.dart';
+/// import 'package:mylekha_liquid/mylekha_liquid.dart';
 ///
 /// void main() {
 ///   final engine = LiquidEngine();

@@ -1,4 +1,4 @@
-# liquiddart
+# mylekha_liquid
 
 A faithful **Dart port of the PHP [`liquid/liquid`](https://github.com/kalimatas/php-liquid) v1.4** template engine — the same engine behind Shopify's Liquid templating language.
 
@@ -25,14 +25,14 @@ Add to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  liquiddart:
-    path: ../liquiddart   # or publish to pub.dev and use: liquiddart: ^1.0.0
+  mylekha_liquid:
+    path: ../mylekha_liquid   # or publish to pub.dev and use: mylekha_liquid: ^1.0.0
 ```
 
 Then import:
 
 ```dart
-import 'package:liquiddart/liquiddart.dart';
+import 'package:mylekha_liquid/mylekha_liquid.dart';
 ```
 
 ---
@@ -40,7 +40,7 @@ import 'package:liquiddart/liquiddart.dart';
 ## Quick Start
 
 ```dart
-import 'package:liquiddart/liquiddart.dart';
+import 'package:mylekha_liquid/mylekha_liquid.dart';
 
 void main() {
   final engine = LiquidEngine();
@@ -245,7 +245,7 @@ Supported codes: `%Y %m %d %H %M %S %A %a %B %b %p %I %e %j %Z` and more.
 Implement `FilterProvider` and pass it to the engine:
 
 ```dart
-import 'package:liquiddart/liquiddart.dart';
+import 'package:mylekha_liquid/mylekha_liquid.dart';
 
 class AppFilters implements FilterProvider {
   @override
@@ -283,7 +283,7 @@ void main() {
 Expose Dart model objects to templates without leaking internal state:
 
 ```dart
-import 'package:liquiddart/liquiddart.dart';
+import 'package:mylekha_liquid/mylekha_liquid.dart';
 
 class Product {
   final String name;
@@ -337,7 +337,7 @@ engine.renderString('Hello, {{ name }}!', assigns: {'name': 'Bob'});
 ## Custom Tags
 
 ```dart
-import 'package:liquiddart/liquiddart.dart';
+import 'package:mylekha_liquid/mylekha_liquid.dart';
 
 class TagHighlight extends AbstractBlock {
   TagHighlight(super.markup, super.tokens, [super.fileSystem]);
@@ -387,7 +387,7 @@ Provide a `FileSystemInterface` to use `{% include %}`:
 
 ```dart
 import 'dart:io';
-import 'package:liquiddart/liquiddart.dart';
+import 'package:mylekha_liquid/mylekha_liquid.dart';
 
 class DiskFileSystem implements FileSystemInterface {
   final String root;
@@ -411,7 +411,7 @@ void main() {
 ## Running Tests
 
 ```bash
-cd liquiddart
+cd mylekha_liquid
 dart test
 ```
 

@@ -1,4 +1,4 @@
-import 'package:liquiddart/liquiddart.dart';
+import 'package:mylekha_liquid/mylekha_liquid.dart';
 import 'package:test/test.dart';
 
 String render(String source, [Map<String, dynamic> assigns = const {}]) {

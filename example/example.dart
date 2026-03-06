@@ -6,7 +6,7 @@
 ///     dart run example/example.dart
 library;
 
-import 'package:liquiddart/liquiddart.dart';
+import 'package:mylekha_liquid/mylekha_liquid.dart';
 
 // ──────────────────────────────────────────────────────────────────────────────
 // MODEL CLASSES

@@ -1,14 +1,14 @@
 // ignore_for_file: avoid_print
 
-/// liquiddart CLI — render a Liquid template from stdin or a literal argument.
+/// mylekha_liquid CLI — render a Liquid template from stdin or a literal argument.
 ///
 /// Usage:
-///   echo "Hello, {{ name }}!" | dart run bin/liquiddart.dart --name=World
-///   dart run bin/liquiddart.dart "Hello, {{ name }}!" --name=World
+///   echo "Hello, {{ name }}!" | dart run bin/mylekha_liquid.dart --name=World
+///   dart run bin/mylekha_liquid.dart "Hello, {{ name }}!" --name=World
 library;
 
 import 'dart:io';
-import 'package:liquiddart/liquiddart.dart';
+import 'package:mylekha_liquid/mylekha_liquid.dart';
 
 void main(List<String> arguments) {
   final assigns = <String, dynamic>{};
@@ -31,8 +31,8 @@ void main(List<String> arguments) {
   // Fall back to stdin if no inline source was given
   if (source == null) {
     if (stdin.hasTerminal) {
-      stderr.writeln('Usage: dart run bin/liquiddart.dart "<template>" [--key=value ...]');
-      stderr.writeln('   or: echo "{{ msg }}" | dart run bin/liquiddart.dart --msg=Hello');
+      stderr.writeln('Usage: dart run bin/mylekha_liquid.dart "<template>" [--key=value ...]');
+      stderr.writeln('   or: echo "{{ msg }}" | dart run bin/mylekha_liquid.dart --msg=Hello');
       exit(1);
     }
     source = stdin.readLineSync() ?? '';
