@@ -1,5 +1,5 @@
 name: liquiddart
-description: A sample command-line application.
+description: A Dart port of the Liquid template engine — supports Flutter, Dart CLI, and web.
 version: 1.0.0
 # repository: https://github.com/my_org/my_repo
 
