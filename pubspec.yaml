@@ -1,7 +1,7 @@
 name: liquiddart
 description: A Dart port of the Liquid template engine — supports Flutter, Dart CLI, and web.
 version: 1.0.0
-# repository: https://github.com/my_org/my_repo
+repository: https://github.com/kechankrisna/liquiddart
 
 environment:
   sdk: ">=3.9.2 <4.0.0"
