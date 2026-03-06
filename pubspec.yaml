@@ -1,7 +1,7 @@
 name: mylekha_liquid
 description: A Dart port of the Liquid template engine — supports Flutter, Dart CLI, and web.
-version: 0.1.0
-repository: https://github.com/kechankrisna/liquiddart
+version: 0.1.0+1
+repository: https://github.com/kechankrisna/mylekha_liquid
 
 environment:
   sdk: ">=3.9.2 <4.0.0"
